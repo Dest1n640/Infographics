@@ -1,0 +1,1156 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='movies_emotions' inline='true' name='federated.0i08ie70ioaps91bu5dw5149m2po' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='movies_emotions' name='textscan.0x8qckb1q2eh2x1bpn27911hobnw'>
+            <connection class='textscan' directory='/Users/dest1n/Downloads' filename='movies_emotions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0x8qckb1q2eh2x1bpn27911hobnw' name='movies_emotions.csv' table='[movies_emotions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='real' name='rating_emotion' ordinal='2' />
+            <column datatype='string' name='emotion' ordinal='3' />
+            <column datatype='string' name='genres' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_emotion</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating_emotion]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>rating_emotion</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emotion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emotion]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>emotion</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[movies_emotions.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Среднее общее' datatype='real' name='[Calculation_0430731594711042]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([rating] + [rating_emotion]) / 2' />
+      </column>
+      <column datatype='string' name='[Genres (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[genres]' new-bin='true'>
+          <bin default-name='false' value='&quot;Другое&quot;'>
+            <value>&quot;Боевик&quot;</value>
+            <value>&quot;Вестерн&quot;</value>
+            <value>&quot;Документальный&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Легкое кино&quot;'>
+            <value>&quot;Комедия&quot;</value>
+            <value>&quot;Мелодрама&quot;</value>
+            <value>&quot;Музыка&quot;</value>
+            <value>&quot;Приключения&quot;</value>
+            <value>&quot;Семейный&quot;</value>
+            <value>&quot;Телевизионный фильм&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Мистика и фантазия&quot;'>
+            <value>&quot;Ужасы&quot;</value>
+            <value>&quot;Фантастика&quot;</value>
+            <value>&quot;Фэнтези&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Серьезное кино&quot;'>
+            <value>&quot;Военный&quot;</value>
+            <value>&quot;Детектив&quot;</value>
+            <value>&quot;Драма&quot;</value>
+            <value>&quot;История&quot;</value>
+            <value>&quot;Криминал&quot;</value>
+            <value>&quot;Триллер&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='movies_emotions.csv' datatype='table' name='[__tableau_internal_object_id__].[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]' role='measure' type='quantitative' />
+      <column caption='Emotion' datatype='string' name='[emotion]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Rating Emotion' datatype='real' name='[rating_emotion]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0430731594711042]' derivation='Avg' name='[avg:Calculation_0430731594711042:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[rating_emotion]' derivation='Avg' name='[avg:rating_emotion:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0430731594711042]' derivation='Sum' name='[sum:Calculation_0430731594711042:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[index]' derivation='Sum' name='[sum:index:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[rating]' derivation='Sum' name='[sum:rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[rating_emotion]' derivation='Sum' name='[sum:rating_emotion:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Emotion)' hidden='true' name='[Action (Emotion)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[emotion]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Genres (group))' hidden='true' name='[Action (Genres (group))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Genres (group)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Genres)' hidden='true' name='[Action (Genres)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[genres]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_1datb66177bp1d13wg2zc09e7y0o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/04/2026 04:49:51 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>index</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>index</remote-alias>
+              <ordinal>0</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1311</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1299</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating_emotion</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rating_emotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating_emotion</remote-alias>
+              <ordinal>2</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emotion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[emotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emotion</remote-alias>
+              <ordinal>3</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>4</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>5</ordinal>
+              <family>movies_emotions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Genres (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Другое&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Серьезное кино&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Мистика и фантазия&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Легкое кино&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[__tableau_internal_object_id__].[cnt:movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[sum:index:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[sum:rating:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:Calculation_0430731594711042:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[sum:rating_emotion:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating_emotion:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[sum:Calculation_0430731594711042:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='movies_emotions.csv' id='movies_emotions.csv_E90A509D31604FDD91FD2B26FFD911F5'>
+            <properties context=''>
+              <relation connection='textscan.0x8qckb1q2eh2x1bpn27911hobnw' name='movies_emotions.csv' table='[movies_emotions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='integer' name='index' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='real' name='rating_emotion' ordinal='2' />
+                  <column datatype='string' name='emotion' ordinal='3' />
+                  <column datatype='string' name='genres' ordinal='4' />
+                  <column datatype='real' name='rating' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7C5FE2FD5E0D414E99752415FCF1807F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='4_Пай_чарт' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_2FA1F70CC2994261B5CA616536285705]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='3_Эмоции' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_0C3D4D800304434789D962D0F2DF0963]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='1_Жанры' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_0AAD3628382D40B8926BE02278A72FA5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='5_Топ10' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_626D21EB69A34DAC9946174015E47A78]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='2_Скаттерплот' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='1_Жанры'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_emotions' name='federated.0i08ie70ioaps91bu5dw5149m2po' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i08ie70ioaps91bu5dw5149m2po'>
+            <column datatype='string' name='[Genres (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[genres]' new-bin='true'>
+                <bin default-name='false' value='&quot;Другое&quot;'>
+                  <value>&quot;Боевик&quot;</value>
+                  <value>&quot;Вестерн&quot;</value>
+                  <value>&quot;Документальный&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Легкое кино&quot;'>
+                  <value>&quot;Комедия&quot;</value>
+                  <value>&quot;Мелодрама&quot;</value>
+                  <value>&quot;Музыка&quot;</value>
+                  <value>&quot;Приключения&quot;</value>
+                  <value>&quot;Семейный&quot;</value>
+                  <value>&quot;Телевизионный фильм&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Мистика и фантазия&quot;'>
+                  <value>&quot;Ужасы&quot;</value>
+                  <value>&quot;Фантастика&quot;</value>
+                  <value>&quot;Фэнтези&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Серьезное кино&quot;'>
+                  <value>&quot;Военный&quot;</value>
+                  <value>&quot;Детектив&quot;</value>
+                  <value>&quot;Драма&quot;</value>
+                  <value>&quot;История&quot;</value>
+                  <value>&quot;Криминал&quot;</value>
+                  <value>&quot;Триллер&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[title]' derivation='Count' name='[cnt:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column-instance column='[genres]' derivation='None' name='[none:genres:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]'>
+            <groupfilter function='level-members' level='[Genres (group)]' user:ui-action-filter='[Action1_7C5FE2FD5E0D414E99752415FCF1807F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0i08ie70ioaps91bu5dw5149m2po].[none:genres:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0i08ie70ioaps91bu5dw5149m2po].[cnt:title:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[cnt:title:qk]' scope='cols' value='Количество фильмов' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0i08ie70ioaps91bu5dw5149m2po].[none:genres:nk]</rows>
+        <cols>[federated.0i08ie70ioaps91bu5dw5149m2po].[cnt:title:qk]</cols>
+      </table>
+      <simple-id uuid='{043843B3-D6BB-4B97-87DA-3BF24CC9FAD2}' />
+    </worksheet>
+    <worksheet name='2_Скаттерплот'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_emotions' name='federated.0i08ie70ioaps91bu5dw5149m2po' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i08ie70ioaps91bu5dw5149m2po'>
+            <column datatype='string' name='[Genres (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[genres]' new-bin='true'>
+                <bin default-name='false' value='&quot;Другое&quot;'>
+                  <value>&quot;Боевик&quot;</value>
+                  <value>&quot;Вестерн&quot;</value>
+                  <value>&quot;Документальный&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Легкое кино&quot;'>
+                  <value>&quot;Комедия&quot;</value>
+                  <value>&quot;Мелодрама&quot;</value>
+                  <value>&quot;Музыка&quot;</value>
+                  <value>&quot;Приключения&quot;</value>
+                  <value>&quot;Семейный&quot;</value>
+                  <value>&quot;Телевизионный фильм&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Мистика и фантазия&quot;'>
+                  <value>&quot;Ужасы&quot;</value>
+                  <value>&quot;Фантастика&quot;</value>
+                  <value>&quot;Фэнтези&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Серьезное кино&quot;'>
+                  <value>&quot;Военный&quot;</value>
+                  <value>&quot;Детектив&quot;</value>
+                  <value>&quot;Драма&quot;</value>
+                  <value>&quot;История&quot;</value>
+                  <value>&quot;Криминал&quot;</value>
+                  <value>&quot;Триллер&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating_emotion]' derivation='Avg' name='[avg:rating_emotion:qk]' pivot='key' type='quantitative' />
+            <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Rating Emotion' datatype='real' name='[rating_emotion]' role='measure' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]'>
+            <groupfilter function='level-members' level='[Genres (group)]' user:ui-action-filter='[Action1_7C5FE2FD5E0D414E99752415FCF1807F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]' scope='cols' value='Средний рейтинг' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0i08ie70ioaps91bu5dw5149m2po].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating_emotion:qk]</rows>
+        <cols>[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{8C2E91D6-3E3C-41C2-8E9D-CA7D2CD91769}' />
+    </worksheet>
+    <worksheet name='3_Эмоции'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_emotions' name='federated.0i08ie70ioaps91bu5dw5149m2po' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i08ie70ioaps91bu5dw5149m2po'>
+            <column datatype='string' name='[Genres (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[genres]' new-bin='true'>
+                <bin default-name='false' value='&quot;Другое&quot;'>
+                  <value>&quot;Боевик&quot;</value>
+                  <value>&quot;Вестерн&quot;</value>
+                  <value>&quot;Документальный&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Легкое кино&quot;'>
+                  <value>&quot;Комедия&quot;</value>
+                  <value>&quot;Мелодрама&quot;</value>
+                  <value>&quot;Музыка&quot;</value>
+                  <value>&quot;Приключения&quot;</value>
+                  <value>&quot;Семейный&quot;</value>
+                  <value>&quot;Телевизионный фильм&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Мистика и фантазия&quot;'>
+                  <value>&quot;Ужасы&quot;</value>
+                  <value>&quot;Фантастика&quot;</value>
+                  <value>&quot;Фэнтези&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Серьезное кино&quot;'>
+                  <value>&quot;Военный&quot;</value>
+                  <value>&quot;Детектив&quot;</value>
+                  <value>&quot;Драма&quot;</value>
+                  <value>&quot;История&quot;</value>
+                  <value>&quot;Криминал&quot;</value>
+                  <value>&quot;Триллер&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Emotion' datatype='string' name='[emotion]' role='dimension' type='nominal' />
+            <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column-instance column='[emotion]' derivation='None' name='[none:emotion:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]'>
+            <groupfilter function='level-members' level='[Genres (group)]' user:ui-action-filter='[Action1_7C5FE2FD5E0D414E99752415FCF1807F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0i08ie70ioaps91bu5dw5149m2po].[none:emotion:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0i08ie70ioaps91bu5dw5149m2po].[Action (Genres (group))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i08ie70ioaps91bu5dw5149m2po].[none:emotion:nk]</rows>
+        <cols>[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{683267E9-5314-4231-A02C-3B72CC833EA9}' />
+    </worksheet>
+    <worksheet name='4_Пай_чарт'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_emotions' name='federated.0i08ie70ioaps91bu5dw5149m2po' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i08ie70ioaps91bu5dw5149m2po'>
+            <column datatype='string' name='[Genres (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[genres]' new-bin='true'>
+                <bin default-name='false' value='&quot;Другое&quot;'>
+                  <value>&quot;Боевик&quot;</value>
+                  <value>&quot;Вестерн&quot;</value>
+                  <value>&quot;Документальный&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Легкое кино&quot;'>
+                  <value>&quot;Комедия&quot;</value>
+                  <value>&quot;Мелодрама&quot;</value>
+                  <value>&quot;Музыка&quot;</value>
+                  <value>&quot;Приключения&quot;</value>
+                  <value>&quot;Семейный&quot;</value>
+                  <value>&quot;Телевизионный фильм&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Мистика и фантазия&quot;'>
+                  <value>&quot;Ужасы&quot;</value>
+                  <value>&quot;Фантастика&quot;</value>
+                  <value>&quot;Фэнтези&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Серьезное кино&quot;'>
+                  <value>&quot;Военный&quot;</value>
+                  <value>&quot;Детектив&quot;</value>
+                  <value>&quot;Драма&quot;</value>
+                  <value>&quot;История&quot;</value>
+                  <value>&quot;Криминал&quot;</value>
+                  <value>&quot;Триллер&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Серьезное кино&quot;</bucket>
+              <bucket>&quot;Легкое кино&quot;</bucket>
+              <bucket>&quot;Мистика и фантазия&quot;</bucket>
+              <bucket>&quot;Другое&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' />
+              <wedge-size column='[federated.0i08ie70ioaps91bu5dw5149m2po].[ctd:title:qk]' />
+              <text column='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' />
+              <text column='[federated.0i08ie70ioaps91bu5dw5149m2po].[ctd:title:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{86C9F122-DDB0-489F-A6DD-7C3FE8F3D06D}' />
+    </worksheet>
+    <worksheet name='5_Топ10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_emotions' name='federated.0i08ie70ioaps91bu5dw5149m2po' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i08ie70ioaps91bu5dw5149m2po'>
+            <column caption='Среднее общее' datatype='real' name='[Calculation_0430731594711042]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([rating] + [rating_emotion]) / 2' />
+            </column>
+            <column-instance column='[Calculation_0430731594711042]' derivation='Avg' name='[avg:Calculation_0430731594711042:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rating_emotion]' derivation='Avg' name='[avg:rating_emotion:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Rating Emotion' datatype='real' name='[rating_emotion]' role='measure' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:rating_emotion:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0i08ie70ioaps91bu5dw5149m2po].[none:title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Calculation_0430731594711042])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0i08ie70ioaps91bu5dw5149m2po].[none:title:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Побег из Шоушенка&quot;</bucket>
+              <bucket>&quot;Форрест Гамп&quot;</bucket>
+              <bucket>&quot;Зелёная миля&quot;</bucket>
+              <bucket>&quot;Список Шиндлера&quot;</bucket>
+              <bucket>&quot;Гладиатор&quot;</bucket>
+              <bucket>&quot;Начало&quot;</bucket>
+              <bucket>&quot;Пианист&quot;</bucket>
+              <bucket>&quot;Китайский квартал&quot;</bucket>
+              <bucket>&quot;1+1&quot;</bucket>
+              <bucket>&quot;Властелин колец: Возвращение Короля&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0i08ie70ioaps91bu5dw5149m2po].[none:title:nk]</column>
+            <column>[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[Multiple Values]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[Multiple Values]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0i08ie70ioaps91bu5dw5149m2po].[avg:Calculation_0430731594711042:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0i08ie70ioaps91bu5dw5149m2po].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' />
+              <lod column='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.5052486658096313' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0i08ie70ioaps91bu5dw5149m2po].[avg:Calculation_0430731594711042:qk] + [federated.0i08ie70ioaps91bu5dw5149m2po].[Multiple Values])</rows>
+        <cols>[federated.0i08ie70ioaps91bu5dw5149m2po].[none:title:nk]</cols>
+      </table>
+      <simple-id uuid='{55BCEDF6-827B-419A-BBDA-25373026D6E4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97672' id='10' param='horz' type-v2='layout-flow' w='98730' x='635' y='1164'>
+            <zone h='97672' id='8' type-v2='layout-basic' w='86022' x='635' y='1164'>
+              <zone h='48836' id='3' name='1_Жанры' w='43011' x='635' y='1164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48836' id='5' name='2_Скаттерплот' w='21505' x='65152' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48836' id='6' name='3_Эмоции' w='43011' x='635' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48836' id='7' name='4_Пай_чарт' w='21506' x='43646' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48836' id='12' name='5_Топ10' w='43011' x='43646' y='1164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97672' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='12708' x='86657' y='1164'>
+              <zone h='15429' id='11' name='4_Пай_чарт' pane-specification-id='0' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' type-v2='color' w='12708' x='86657' y='1164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9607' id='13' name='5_Топ10' pane-specification-id='4' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' type-v2='color' w='12708' x='86657' y='16593'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97672' id='24' param='vert' type-v2='layout-flow' w='98730' x='635' y='1164'>
+                <zone fixed-size='280' h='48836' id='3' is-fixed='true' name='1_Жанры' w='43011' x='635' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48836' id='12' is-fixed='true' name='5_Топ10' w='43011' x='43646' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9607' id='13' name='5_Топ10' pane-specification-id='4' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' type-v2='color' w='12708' x='86657' y='16593'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48836' id='6' is-fixed='true' name='3_Эмоции' w='43011' x='635' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48836' id='7' is-fixed='true' name='4_Пай_чарт' w='21506' x='43646' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15429' id='11' name='4_Пай_чарт' pane-specification-id='0' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' type-v2='color' w='12708' x='86657' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48836' id='5' is-fixed='true' name='2_Скаттерплот' w='21505' x='65152' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D7DB6C80-5532-4186-9FC3-407E01A32D44}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='1_Жанры'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{12B4A7DD-C7CD-4192-B4F8-9BCC68D42958}' />
+    </window>
+    <window class='worksheet' name='2_Скаттерплот'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A55359E1-1279-4E1C-ABAF-3FC132B2F538}' />
+    </window>
+    <window class='worksheet' name='3_Эмоции'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2571E5C0-B46A-461E-B9B8-707912E0921F}' />
+    </window>
+    <window class='worksheet' name='4_Пай_чарт'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[Genres (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B9B10ACE-012B-4B46-B587-C9F05819874D}' />
+    </window>
+    <window class='worksheet' name='5_Топ10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0i08ie70ioaps91bu5dw5149m2po].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6CC6EF08-02EB-4423-9B83-144EC61077EB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='1_Жанры' />
+        <viewpoint name='2_Скаттерплот'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='3_Эмоции' />
+        <viewpoint name='4_Пай_чарт'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='5_Топ10' />
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{B7E7F84B-F0D4-443E-864F-1FCFB23D08B0}' />
+    </window>
+  </windows>
+</workbook>
