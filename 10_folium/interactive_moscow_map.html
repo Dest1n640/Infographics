@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0febf7047d8aa4183f225459fa5e464 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d0febf7047d8aa4183f225459fa5e464" ></div>
+        
+    
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+<div style="
+    position: fixed; 
+    bottom: 30px; left: 30px; width: 220px; height: auto; 
+    background-color: white; border: 2px solid grey; z-index:9999; font-size:12px;
+    padding: 10px; border-radius: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    ">
+    <h4 style="margin-top:0px; margin-bottom:10px; text-align:center;">Легенда категорий</h4>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:red; margin-right:5px;"></i> Достопримечательность
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:green; margin-right:5px;"></i> Парк
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:purple; margin-right:5px;"></i> Театр
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:blue; margin-right:5px;"></i> Музей
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:orange; margin-right:5px;"></i> Ресторан
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#D1B26F; margin-right:5px;"></i> Храм
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#5F9EA0; margin-right:5px;"></i> Торговый центр
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:gray; margin-right:5px;"></i> Памятник
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#90EE90; margin-right:5px;"></i> Стадион
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#00008B; margin-right:5px;"></i> Библиотека
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#ADD8E6; margin-right:5px;"></i> Смотровая площадка
+        </div>
+    
+        <div style="margin-bottom: 5px;">
+            <i class="fa fa-circle fa-1x" style="color:#8B0000; margin-right:5px;"></i> Метро
+        </div>
+    
+    <hr style="margin:5px 0;">
+    <div style="font-size: 10px; color: gray;">
+        * Круги под маркерами показывают пропорцию лайков
+    </div>
+</div>
+</body>
+</html>
+</body>
+<script>
+    
+    
+            var map_d0febf7047d8aa4183f225459fa5e464 = L.map(
+                "map_d0febf7047d8aa4183f225459fa5e464",
+                {
+                    center: [55.7512, 37.6184],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2950f3281afe1c6bda20a4c770805ebd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2950f3281afe1c6bda20a4c770805ebd.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var tile_layer_dd2cd38fd01ea7d07107248430824876 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dd2cd38fd01ea7d07107248430824876.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var tile_layer_7bfadfc65fb5a9573895c3746a9c470f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7bfadfc65fb5a9573895c3746a9c470f.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_1b712b07fc1f480831ac50361127916c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_20d8ae8682cbabd0ae79439cb7bc10c3 = L.marker(
+                [55.7535, 37.621],
+                {
+}
+            ).addTo(feature_group_1b712b07fc1f480831ac50361127916c);
+        
+    
+            var icon_ee21c3989d782d2edfd58d118ea36ea9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5d2bd85852411ce40b4008a149e5a82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d1ced5e3eace1a577bc60f6b67a1ca0 = $(`<div id="html_0d1ced5e3eace1a577bc60f6b67a1ca0" style="width: 100.0%; height: 100.0%;"><b>Красная площадь</b><br>Категория: Достопримечательность<br>Лайки: 💖 5000</div>`)[0];
+                popup_d5d2bd85852411ce40b4008a149e5a82.setContent(html_0d1ced5e3eace1a577bc60f6b67a1ca0);
+            
+        
+
+        marker_20d8ae8682cbabd0ae79439cb7bc10c3.bindPopup(popup_d5d2bd85852411ce40b4008a149e5a82)
+        ;
+
+        
+    
+    
+            marker_20d8ae8682cbabd0ae79439cb7bc10c3.bindTooltip(
+                `<div>
+                     Красная площадь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_20d8ae8682cbabd0ae79439cb7bc10c3.setIcon(icon_ee21c3989d782d2edfd58d118ea36ea9);
+            
+    
+            var circle_fd7ac2bd9fbfc602f03c1ad2f8765010 = L.circle(
+                [55.7535, 37.621],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_1b712b07fc1f480831ac50361127916c);
+        
+    
+            circle_fd7ac2bd9fbfc602f03c1ad2f8765010.bindTooltip(
+                `<div>
+                     Зона популярности (5000 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_1b712b07fc1f480831ac50361127916c.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_e76acd67a2c64bbc745e22d2f303b6f6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_1e380acda19a0dbed1e3595c8d7674eb = L.marker(
+                [55.7512, 37.6278],
+                {
+}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            var icon_17a241fb576696b66699e60aaa812866 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_520190a1d0e30f7787a403443b9c11e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b47cff77d99b7f1ac0678322f6a7d6b = $(`<div id="html_0b47cff77d99b7f1ac0678322f6a7d6b" style="width: 100.0%; height: 100.0%;"><b>Парк Зарядье</b><br>Категория: Парк<br>Лайки: 💖 4200</div>`)[0];
+                popup_520190a1d0e30f7787a403443b9c11e3.setContent(html_0b47cff77d99b7f1ac0678322f6a7d6b);
+            
+        
+
+        marker_1e380acda19a0dbed1e3595c8d7674eb.bindPopup(popup_520190a1d0e30f7787a403443b9c11e3)
+        ;
+
+        
+    
+    
+            marker_1e380acda19a0dbed1e3595c8d7674eb.bindTooltip(
+                `<div>
+                     Парк Зарядье
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e380acda19a0dbed1e3595c8d7674eb.setIcon(icon_17a241fb576696b66699e60aaa812866);
+            
+    
+            var circle_a738b0eeee41620f6af5cc1148deb7cf = L.circle(
+                [55.7512, 37.6278],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 253.48837209302326, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            circle_a738b0eeee41620f6af5cc1148deb7cf.bindTooltip(
+                `<div>
+                     Зона популярности (4200 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cddcfa45653ee9084c9df210853c67e5 = L.marker(
+                [55.7289, 37.6025],
+                {
+}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            var icon_4598ee67f73993695fdc183e09668302 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac85342b01ccb841ff554f7cd0506b73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_889415867e3fab4d31f8f73ff79e4594 = $(`<div id="html_889415867e3fab4d31f8f73ff79e4594" style="width: 100.0%; height: 100.0%;"><b>Парк Горького</b><br>Категория: Парк<br>Лайки: 💖 4800</div>`)[0];
+                popup_ac85342b01ccb841ff554f7cd0506b73.setContent(html_889415867e3fab4d31f8f73ff79e4594);
+            
+        
+
+        marker_cddcfa45653ee9084c9df210853c67e5.bindPopup(popup_ac85342b01ccb841ff554f7cd0506b73)
+        ;
+
+        
+    
+    
+            marker_cddcfa45653ee9084c9df210853c67e5.bindTooltip(
+                `<div>
+                     Парк Горького
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cddcfa45653ee9084c9df210853c67e5.setIcon(icon_4598ee67f73993695fdc183e09668302);
+            
+    
+            var circle_d2e196aeaf74fe98ab0eed7fa47c9d46 = L.circle(
+                [55.7289, 37.6025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 288.37209302325584, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            circle_d2e196aeaf74fe98ab0eed7fa47c9d46.bindTooltip(
+                `<div>
+                     Зона популярности (4800 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f3654720c2bbe7a73992395eaa2e8c28 = L.marker(
+                [55.829, 37.631],
+                {
+}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            var icon_d861e09062873642a2464ba6c3c6f716 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c25511423cb5bcd87a8b8e4c15d1d0ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a843ce3c2bed8bf859d9d2895a18e6a = $(`<div id="html_4a843ce3c2bed8bf859d9d2895a18e6a" style="width: 100.0%; height: 100.0%;"><b>ВДНХ</b><br>Категория: Парк<br>Лайки: 💖 4900</div>`)[0];
+                popup_c25511423cb5bcd87a8b8e4c15d1d0ef.setContent(html_4a843ce3c2bed8bf859d9d2895a18e6a);
+            
+        
+
+        marker_f3654720c2bbe7a73992395eaa2e8c28.bindPopup(popup_c25511423cb5bcd87a8b8e4c15d1d0ef)
+        ;
+
+        
+    
+    
+            marker_f3654720c2bbe7a73992395eaa2e8c28.bindTooltip(
+                `<div>
+                     ВДНХ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f3654720c2bbe7a73992395eaa2e8c28.setIcon(icon_d861e09062873642a2464ba6c3c6f716);
+            
+    
+            var circle_7c1a52312793833bf8bf425fa7cd242c = L.circle(
+                [55.829, 37.631],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 294.18604651162786, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            circle_7c1a52312793833bf8bf425fa7cd242c.bindTooltip(
+                `<div>
+                     Зона популярности (4900 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_246e0de009a4134dfbaef17f53140ba6 = L.marker(
+                [55.7781, 37.6358],
+                {
+}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            var icon_d0b4e009dd61ef53fc472da43dc03353 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18043cd995c006915b500004d34e0526 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9adb54e9b5425fdbf804828608d79020 = $(`<div id="html_9adb54e9b5425fdbf804828608d79020" style="width: 100.0%; height: 100.0%;"><b>Аптекарский огород</b><br>Категория: Парк<br>Лайки: 💖 2800</div>`)[0];
+                popup_18043cd995c006915b500004d34e0526.setContent(html_9adb54e9b5425fdbf804828608d79020);
+            
+        
+
+        marker_246e0de009a4134dfbaef17f53140ba6.bindPopup(popup_18043cd995c006915b500004d34e0526)
+        ;
+
+        
+    
+    
+            marker_246e0de009a4134dfbaef17f53140ba6.bindTooltip(
+                `<div>
+                     Аптекарский огород
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_246e0de009a4134dfbaef17f53140ba6.setIcon(icon_d0b4e009dd61ef53fc472da43dc03353);
+            
+    
+            var circle_6628ea07c38b6d430152a500bc2c1ab8 = L.circle(
+                [55.7781, 37.6358],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 172.09302325581393, "stroke": true, "weight": 1}
+            ).addTo(feature_group_e76acd67a2c64bbc745e22d2f303b6f6);
+        
+    
+            circle_6628ea07c38b6d430152a500bc2c1ab8.bindTooltip(
+                `<div>
+                     Зона популярности (2800 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_e76acd67a2c64bbc745e22d2f303b6f6.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_cd7c34d75df3f1217b983d11aa0d11bc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c99c93fe6b903a7a6c06f4a44ff2059e = L.marker(
+                [55.7602, 37.6185],
+                {
+}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            var icon_12d7177f75f6843b8c9f7551c1e5da2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "masks-theater",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bacdabdf95bebd0a374d547b90ff4a82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e334d933f7664844a8c08f729788272 = $(`<div id="html_6e334d933f7664844a8c08f729788272" style="width: 100.0%; height: 100.0%;"><b>Большой театр</b><br>Категория: Театр<br>Лайки: 💖 3100</div>`)[0];
+                popup_bacdabdf95bebd0a374d547b90ff4a82.setContent(html_6e334d933f7664844a8c08f729788272);
+            
+        
+
+        marker_c99c93fe6b903a7a6c06f4a44ff2059e.bindPopup(popup_bacdabdf95bebd0a374d547b90ff4a82)
+        ;
+
+        
+    
+    
+            marker_c99c93fe6b903a7a6c06f4a44ff2059e.bindTooltip(
+                `<div>
+                     Большой театр
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c99c93fe6b903a7a6c06f4a44ff2059e.setIcon(icon_12d7177f75f6843b8c9f7551c1e5da2d);
+            
+    
+            var circle_b8f4af5e886cc43b70234ca85fcad104 = L.circle(
+                [55.7602, 37.6185],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 189.53488372093022, "stroke": true, "weight": 1}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            circle_b8f4af5e886cc43b70234ca85fcad104.bindTooltip(
+                `<div>
+                     Зона популярности (3100 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3b89327bd873e8af379454dcabcf010e = L.marker(
+                [55.7667, 37.6062],
+                {
+}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            var icon_0dce725de6d2bdbb2adf38e61c9449b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "masks-theater",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c344df0ee2d3420acf380baefbe9204 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ba523cf7f54e0f56b4269c3e7248fb3 = $(`<div id="html_1ba523cf7f54e0f56b4269c3e7248fb3" style="width: 100.0%; height: 100.0%;"><b>Театр Ленком</b><br>Категория: Театр<br>Лайки: 💖 1500</div>`)[0];
+                popup_7c344df0ee2d3420acf380baefbe9204.setContent(html_1ba523cf7f54e0f56b4269c3e7248fb3);
+            
+        
+
+        marker_3b89327bd873e8af379454dcabcf010e.bindPopup(popup_7c344df0ee2d3420acf380baefbe9204)
+        ;
+
+        
+    
+    
+            marker_3b89327bd873e8af379454dcabcf010e.bindTooltip(
+                `<div>
+                     Театр Ленком
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b89327bd873e8af379454dcabcf010e.setIcon(icon_0dce725de6d2bdbb2adf38e61c9449b3);
+            
+    
+            var circle_22a2b24726ce789e0bc09a05ab6c2f24 = L.circle(
+                [55.7667, 37.6062],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 96.51162790697674, "stroke": true, "weight": 1}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            circle_22a2b24726ce789e0bc09a05ab6c2f24.bindTooltip(
+                `<div>
+                     Зона популярности (1500 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_db803e02ca9d9b0e9e41291bdeee0670 = L.marker(
+                [55.7607, 37.6455],
+                {
+}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            var icon_f7e7a29a94455a737759d5109f203279 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "masks-theater",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e46069fceb4f7c7f07bba038c73c10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b728822d4565ccdd7e08adbc8b1d66ec = $(`<div id="html_b728822d4565ccdd7e08adbc8b1d66ec" style="width: 100.0%; height: 100.0%;"><b>Театр Современник</b><br>Категория: Театр<br>Лайки: 💖 1900</div>`)[0];
+                popup_b5e46069fceb4f7c7f07bba038c73c10.setContent(html_b728822d4565ccdd7e08adbc8b1d66ec);
+            
+        
+
+        marker_db803e02ca9d9b0e9e41291bdeee0670.bindPopup(popup_b5e46069fceb4f7c7f07bba038c73c10)
+        ;
+
+        
+    
+    
+            marker_db803e02ca9d9b0e9e41291bdeee0670.bindTooltip(
+                `<div>
+                     Театр Современник
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db803e02ca9d9b0e9e41291bdeee0670.setIcon(icon_f7e7a29a94455a737759d5109f203279);
+            
+    
+            var circle_1fffe736a8207abed02d30cdceacfd9e = L.circle(
+                [55.7607, 37.6455],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 119.76744186046511, "stroke": true, "weight": 1}
+            ).addTo(feature_group_cd7c34d75df3f1217b983d11aa0d11bc);
+        
+    
+            circle_1fffe736a8207abed02d30cdceacfd9e.bindTooltip(
+                `<div>
+                     Зона популярности (1900 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_cd7c34d75df3f1217b983d11aa0d11bc.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_3b38ce54c1da25f7917690101e202669 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_13bb4f070f345658e973441c03ae5a2b = L.marker(
+                [55.7414, 37.6208],
+                {
+}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            var icon_76cb9e95aa44ccdfbe4e10f08146e5e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building-columns",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42374d9d04870c3fb7d2d4f6bfb31242 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ce280f9e55034601d70e9d4d8bc4bb8 = $(`<div id="html_3ce280f9e55034601d70e9d4d8bc4bb8" style="width: 100.0%; height: 100.0%;"><b>Третьяковская галерея</b><br>Категория: Музей<br>Лайки: 💖 3800</div>`)[0];
+                popup_42374d9d04870c3fb7d2d4f6bfb31242.setContent(html_3ce280f9e55034601d70e9d4d8bc4bb8);
+            
+        
+
+        marker_13bb4f070f345658e973441c03ae5a2b.bindPopup(popup_42374d9d04870c3fb7d2d4f6bfb31242)
+        ;
+
+        
+    
+    
+            marker_13bb4f070f345658e973441c03ae5a2b.bindTooltip(
+                `<div>
+                     Третьяковская галерея
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13bb4f070f345658e973441c03ae5a2b.setIcon(icon_76cb9e95aa44ccdfbe4e10f08146e5e5);
+            
+    
+            var circle_2a4de11f78a33b3272f4c5e07cb2682a = L.circle(
+                [55.7414, 37.6208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 230.23255813953486, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            circle_2a4de11f78a33b3272f4c5e07cb2682a.bindTooltip(
+                `<div>
+                     Зона популярности (3800 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd3c18028736b3c03902f6ed6033446b = L.marker(
+                [55.8228, 37.6397],
+                {
+}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            var icon_f27c52377dbd15dbce4758665a01e803 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building-columns",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dcd41613f41f14bc78d0fd278523799 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e737f4395631a215bb8d29029772f731 = $(`<div id="html_e737f4395631a215bb8d29029772f731" style="width: 100.0%; height: 100.0%;"><b>Музей Космонавтики</b><br>Категория: Музей<br>Лайки: 💖 3200</div>`)[0];
+                popup_5dcd41613f41f14bc78d0fd278523799.setContent(html_e737f4395631a215bb8d29029772f731);
+            
+        
+
+        marker_bd3c18028736b3c03902f6ed6033446b.bindPopup(popup_5dcd41613f41f14bc78d0fd278523799)
+        ;
+
+        
+    
+    
+            marker_bd3c18028736b3c03902f6ed6033446b.bindTooltip(
+                `<div>
+                     Музей Космонавтики
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd3c18028736b3c03902f6ed6033446b.setIcon(icon_f27c52377dbd15dbce4758665a01e803);
+            
+    
+            var circle_fabc2df121043705f755dff9d4bae67c = L.circle(
+                [55.8228, 37.6397],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 195.34883720930233, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            circle_fabc2df121043705f755dff9d4bae67c.bindTooltip(
+                `<div>
+                     Зона популярности (3200 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b72da861b29142e667c79121cd79212 = L.marker(
+                [55.7473, 37.6052],
+                {
+}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            var icon_b3c444db52e2977da21786f7f34d2e31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "building-columns",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0449345c221131cf2ee76a44871bc7a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6c61fb0cbc724348c955125f42717e4 = $(`<div id="html_e6c61fb0cbc724348c955125f42717e4" style="width: 100.0%; height: 100.0%;"><b>Музей Изобразительных Искусств</b><br>Категория: Музей<br>Лайки: 💖 3400</div>`)[0];
+                popup_0449345c221131cf2ee76a44871bc7a6.setContent(html_e6c61fb0cbc724348c955125f42717e4);
+            
+        
+
+        marker_0b72da861b29142e667c79121cd79212.bindPopup(popup_0449345c221131cf2ee76a44871bc7a6)
+        ;
+
+        
+    
+    
+            marker_0b72da861b29142e667c79121cd79212.bindTooltip(
+                `<div>
+                     Музей Изобразительных Искусств
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b72da861b29142e667c79121cd79212.setIcon(icon_b3c444db52e2977da21786f7f34d2e31);
+            
+    
+            var circle_74087cc8d5807c27b3b1fb8a9404aee4 = L.circle(
+                [55.7473, 37.6052],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 206.97674418604652, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3b38ce54c1da25f7917690101e202669);
+        
+    
+            circle_74087cc8d5807c27b3b1fb8a9404aee4.bindTooltip(
+                `<div>
+                     Зона популярности (3400 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_3b38ce54c1da25f7917690101e202669.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_7e10561a0ce7c5843b9d47423fc6a523 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b94d22669e57ec233af497d2001b9487 = L.marker(
+                [55.763, 37.6046],
+                {
+}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            var icon_0b5dd2f868501a49cbe47e2d363dc0b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "utensils",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7f296d1583463cb77af7908ee90d393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ac6585c6612a951062ba8e524976e81 = $(`<div id="html_0ac6585c6612a951062ba8e524976e81" style="width: 100.0%; height: 100.0%;"><b>Кафе Пушкинъ</b><br>Категория: Ресторан<br>Лайки: 💖 2100</div>`)[0];
+                popup_a7f296d1583463cb77af7908ee90d393.setContent(html_0ac6585c6612a951062ba8e524976e81);
+            
+        
+
+        marker_b94d22669e57ec233af497d2001b9487.bindPopup(popup_a7f296d1583463cb77af7908ee90d393)
+        ;
+
+        
+    
+    
+            marker_b94d22669e57ec233af497d2001b9487.bindTooltip(
+                `<div>
+                     Кафе Пушкинъ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b94d22669e57ec233af497d2001b9487.setIcon(icon_0b5dd2f868501a49cbe47e2d363dc0b4);
+            
+    
+            var circle_11beaea0cff061f9ee60a96c292511a6 = L.circle(
+                [55.763, 37.6046],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 131.39534883720933, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            circle_11beaea0cff061f9ee60a96c292511a6.bindTooltip(
+                `<div>
+                     Зона популярности (2100 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a99a4a2a7e2995d622b5dd4ed15ca2ca = L.marker(
+                [55.7479, 37.5816],
+                {
+}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            var icon_49907e4303e0ce8cc46a7e54ed133712 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "utensils",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a251b23c15efa2df9d84d21a5769256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afb86a2e088ec9dee7f70882f8dfd72b = $(`<div id="html_afb86a2e088ec9dee7f70882f8dfd72b" style="width: 100.0%; height: 100.0%;"><b>White Rabbit</b><br>Категория: Ресторан<br>Лайки: 💖 2700</div>`)[0];
+                popup_1a251b23c15efa2df9d84d21a5769256.setContent(html_afb86a2e088ec9dee7f70882f8dfd72b);
+            
+        
+
+        marker_a99a4a2a7e2995d622b5dd4ed15ca2ca.bindPopup(popup_1a251b23c15efa2df9d84d21a5769256)
+        ;
+
+        
+    
+    
+            marker_a99a4a2a7e2995d622b5dd4ed15ca2ca.bindTooltip(
+                `<div>
+                     White Rabbit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a99a4a2a7e2995d622b5dd4ed15ca2ca.setIcon(icon_49907e4303e0ce8cc46a7e54ed133712);
+            
+    
+            var circle_14c1f17f5b8b0c2040b452ce570c18ca = L.circle(
+                [55.7479, 37.5816],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 166.27906976744185, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            circle_14c1f17f5b8b0c2040b452ce570c18ca.bindTooltip(
+                `<div>
+                     Зона популярности (2700 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d775b312bf84281867dcfa9b839c421e = L.marker(
+                [55.7801, 37.5925],
+                {
+}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            var icon_003e216a2b957232e4d0f3662f782ee4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "utensils",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f1427e997dec25d6c6a5df41714ae3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30f25ca813fdd5bc10b5b1bc49a35f25 = $(`<div id="html_30f25ca813fdd5bc10b5b1bc49a35f25" style="width: 100.0%; height: 100.0%;"><b>Депо Москва</b><br>Категория: Ресторан<br>Лайки: 💖 3600</div>`)[0];
+                popup_8f1427e997dec25d6c6a5df41714ae3a.setContent(html_30f25ca813fdd5bc10b5b1bc49a35f25);
+            
+        
+
+        marker_d775b312bf84281867dcfa9b839c421e.bindPopup(popup_8f1427e997dec25d6c6a5df41714ae3a)
+        ;
+
+        
+    
+    
+            marker_d775b312bf84281867dcfa9b839c421e.bindTooltip(
+                `<div>
+                     Депо Москва
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d775b312bf84281867dcfa9b839c421e.setIcon(icon_003e216a2b957232e4d0f3662f782ee4);
+            
+    
+            var circle_b5d9bd4d1bb6e9163f09a5c2f121b3c1 = L.circle(
+                [55.7801, 37.5925],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 218.6046511627907, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7e10561a0ce7c5843b9d47423fc6a523);
+        
+    
+            circle_b5d9bd4d1bb6e9163f09a5c2f121b3c1.bindTooltip(
+                `<div>
+                     Зона популярности (3600 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_7e10561a0ce7c5843b9d47423fc6a523.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_c59c8a66a650c34ff902bcba7a414e90 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_28907c19aa213e06f0c8ba109c0dc901 = L.marker(
+                [55.7446, 37.6055],
+                {
+}
+            ).addTo(feature_group_c59c8a66a650c34ff902bcba7a414e90);
+        
+    
+            var icon_ea761462ade56fb97610f62bdc67823f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0f995482a119ab827994cca71d5ee61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_840bf4872203efc5ecd4b95049d49790 = $(`<div id="html_840bf4872203efc5ecd4b95049d49790" style="width: 100.0%; height: 100.0%;"><b>Храм Христа Спасителя</b><br>Категория: Храм<br>Лайки: 💖 2900</div>`)[0];
+                popup_c0f995482a119ab827994cca71d5ee61.setContent(html_840bf4872203efc5ecd4b95049d49790);
+            
+        
+
+        marker_28907c19aa213e06f0c8ba109c0dc901.bindPopup(popup_c0f995482a119ab827994cca71d5ee61)
+        ;
+
+        
+    
+    
+            marker_28907c19aa213e06f0c8ba109c0dc901.bindTooltip(
+                `<div>
+                     Храм Христа Спасителя
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_28907c19aa213e06f0c8ba109c0dc901.setIcon(icon_ea761462ade56fb97610f62bdc67823f);
+            
+    
+            var circle_ee9953a68c8a1d4d15889845ca683940 = L.circle(
+                [55.7446, 37.6055],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 177.90697674418607, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c59c8a66a650c34ff902bcba7a414e90);
+        
+    
+            circle_ee9953a68c8a1d4d15889845ca683940.bindTooltip(
+                `<div>
+                     Зона популярности (2900 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1c84f988179db8fb70cac17d7b1e1d0c = L.marker(
+                [55.7525, 37.623],
+                {
+}
+            ).addTo(feature_group_c59c8a66a650c34ff902bcba7a414e90);
+        
+    
+            var icon_de5067e37eb707ada76d99ce09d7a480 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f723fcce1697d64fd25b984126bc0aa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afd673636efa1fe81464556762f7fb14 = $(`<div id="html_afd673636efa1fe81464556762f7fb14" style="width: 100.0%; height: 100.0%;"><b>Собор Василия Блаженного</b><br>Категория: Храм<br>Лайки: 💖 4700</div>`)[0];
+                popup_f723fcce1697d64fd25b984126bc0aa7.setContent(html_afd673636efa1fe81464556762f7fb14);
+            
+        
+
+        marker_1c84f988179db8fb70cac17d7b1e1d0c.bindPopup(popup_f723fcce1697d64fd25b984126bc0aa7)
+        ;
+
+        
+    
+    
+            marker_1c84f988179db8fb70cac17d7b1e1d0c.bindTooltip(
+                `<div>
+                     Собор Василия Блаженного
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c84f988179db8fb70cac17d7b1e1d0c.setIcon(icon_de5067e37eb707ada76d99ce09d7a480);
+            
+    
+            var circle_72a7b83afff2f063c9207bdf8559f52a = L.circle(
+                [55.7525, 37.623],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 282.5581395348837, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c59c8a66a650c34ff902bcba7a414e90);
+        
+    
+            circle_72a7b83afff2f063c9207bdf8559f52a.bindTooltip(
+                `<div>
+                     Зона популярности (4700 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c59c8a66a650c34ff902bcba7a414e90.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_961e14a8f6e7588ea768c2ae8bceb658 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_8f6a3155d2a8f15a85bd1c34ef8620a2 = L.marker(
+                [55.7547, 37.6215],
+                {
+}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            var icon_f4869114d3cf70f94aa7b2d1d3bc5d16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "cart-shopping",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_262e95eeb35ff5fda504df9add3eb002 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aebadabc06b5e1204ef65be2f05e07fc = $(`<div id="html_aebadabc06b5e1204ef65be2f05e07fc" style="width: 100.0%; height: 100.0%;"><b>ГУМ</b><br>Категория: Торговый центр<br>Лайки: 💖 3500</div>`)[0];
+                popup_262e95eeb35ff5fda504df9add3eb002.setContent(html_aebadabc06b5e1204ef65be2f05e07fc);
+            
+        
+
+        marker_8f6a3155d2a8f15a85bd1c34ef8620a2.bindPopup(popup_262e95eeb35ff5fda504df9add3eb002)
+        ;
+
+        
+    
+    
+            marker_8f6a3155d2a8f15a85bd1c34ef8620a2.bindTooltip(
+                `<div>
+                     ГУМ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f6a3155d2a8f15a85bd1c34ef8620a2.setIcon(icon_f4869114d3cf70f94aa7b2d1d3bc5d16);
+            
+    
+            var circle_f0f3a08dad5acf0611ce2064e7434ee3 = L.circle(
+                [55.7547, 37.6215],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 212.79069767441862, "stroke": true, "weight": 1}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            circle_f0f3a08dad5acf0611ce2064e7434ee3.bindTooltip(
+                `<div>
+                     Зона популярности (3500 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_812bd8396f8647b8e633c455afbb6337 = L.marker(
+                [55.7608, 37.6201],
+                {
+}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            var icon_80dde001c39a84cd47d627ac918b4091 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "cart-shopping",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dae2639b541e62bce45aa3778a47e6ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7a8580c929ffe3ec25cfe452cb0c203 = $(`<div id="html_e7a8580c929ffe3ec25cfe452cb0c203" style="width: 100.0%; height: 100.0%;"><b>ЦУМ</b><br>Категория: Торговый центр<br>Лайки: 💖 2500</div>`)[0];
+                popup_dae2639b541e62bce45aa3778a47e6ef.setContent(html_e7a8580c929ffe3ec25cfe452cb0c203);
+            
+        
+
+        marker_812bd8396f8647b8e633c455afbb6337.bindPopup(popup_dae2639b541e62bce45aa3778a47e6ef)
+        ;
+
+        
+    
+    
+            marker_812bd8396f8647b8e633c455afbb6337.bindTooltip(
+                `<div>
+                     ЦУМ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_812bd8396f8647b8e633c455afbb6337.setIcon(icon_80dde001c39a84cd47d627ac918b4091);
+            
+    
+            var circle_3fd5a211ab7703c7b30a387b631ac7e7 = L.circle(
+                [55.7608, 37.6201],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 154.6511627906977, "stroke": true, "weight": 1}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            circle_3fd5a211ab7703c7b30a387b631ac7e7.bindTooltip(
+                `<div>
+                     Зона популярности (2500 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5a62154a56289a1361c396835b2cd0b = L.marker(
+                [55.7445, 37.566],
+                {
+}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            var icon_cc89086d564031811f3db64d5078f252 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "cart-shopping",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4d46a1656ade85af32e4bcc8823dcab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ed9e8da2b86254da4878c092b734778 = $(`<div id="html_1ed9e8da2b86254da4878c092b734778" style="width: 100.0%; height: 100.0%;"><b>Европейский</b><br>Категория: Торговый центр<br>Лайки: 💖 2300</div>`)[0];
+                popup_c4d46a1656ade85af32e4bcc8823dcab.setContent(html_1ed9e8da2b86254da4878c092b734778);
+            
+        
+
+        marker_f5a62154a56289a1361c396835b2cd0b.bindPopup(popup_c4d46a1656ade85af32e4bcc8823dcab)
+        ;
+
+        
+    
+    
+            marker_f5a62154a56289a1361c396835b2cd0b.bindTooltip(
+                `<div>
+                     Европейский
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5a62154a56289a1361c396835b2cd0b.setIcon(icon_cc89086d564031811f3db64d5078f252);
+            
+    
+            var circle_02da9632ea1186c3e567e2958bc554a4 = L.circle(
+                [55.7445, 37.566],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 143.02325581395348, "stroke": true, "weight": 1}
+            ).addTo(feature_group_961e14a8f6e7588ea768c2ae8bceb658);
+        
+    
+            circle_02da9632ea1186c3e567e2958bc554a4.bindTooltip(
+                `<div>
+                     Зона популярности (2300 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_961e14a8f6e7588ea768c2ae8bceb658.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_7d1a3a7321e394d2971872e823119637 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d69cc3aa2695eb877f858397afe4bdd1 = L.marker(
+                [55.7656, 37.6053],
+                {
+}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            var icon_16c3ebdd81dcf388a559f1ca68fa48c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "monument",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f31fd87b7a73f43a773638d8d4ae41df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1701476661bb15bd98337bf3a5c71f90 = $(`<div id="html_1701476661bb15bd98337bf3a5c71f90" style="width: 100.0%; height: 100.0%;"><b>Памятник Пушкину</b><br>Категория: Памятник<br>Лайки: 💖 1200</div>`)[0];
+                popup_f31fd87b7a73f43a773638d8d4ae41df.setContent(html_1701476661bb15bd98337bf3a5c71f90);
+            
+        
+
+        marker_d69cc3aa2695eb877f858397afe4bdd1.bindPopup(popup_f31fd87b7a73f43a773638d8d4ae41df)
+        ;
+
+        
+    
+    
+            marker_d69cc3aa2695eb877f858397afe4bdd1.bindTooltip(
+                `<div>
+                     Памятник Пушкину
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d69cc3aa2695eb877f858397afe4bdd1.setIcon(icon_16c3ebdd81dcf388a559f1ca68fa48c6);
+            
+    
+            var circle_4ad30020a4fee05b1f1555a8e237e711 = L.circle(
+                [55.7656, 37.6053],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 79.06976744186046, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            circle_4ad30020a4fee05b1f1555a8e237e711.bindTooltip(
+                `<div>
+                     Зона популярности (1200 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03ae4593e209b62ca43505e36f981bb1 = L.marker(
+                [55.7383, 37.6083],
+                {
+}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            var icon_78bd784bc478f04f966ddecb537fb59c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "monument",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f3197e66dc7630409b94b764febcd3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abdd2f623bfab103b0b7ecdd0c1f6ec2 = $(`<div id="html_abdd2f623bfab103b0b7ecdd0c1f6ec2" style="width: 100.0%; height: 100.0%;"><b>Памятник Петру I</b><br>Категория: Памятник<br>Лайки: 💖 850</div>`)[0];
+                popup_7f3197e66dc7630409b94b764febcd3e.setContent(html_abdd2f623bfab103b0b7ecdd0c1f6ec2);
+            
+        
+
+        marker_03ae4593e209b62ca43505e36f981bb1.bindPopup(popup_7f3197e66dc7630409b94b764febcd3e)
+        ;
+
+        
+    
+    
+            marker_03ae4593e209b62ca43505e36f981bb1.bindTooltip(
+                `<div>
+                     Памятник Петру I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03ae4593e209b62ca43505e36f981bb1.setIcon(icon_78bd784bc478f04f966ddecb537fb59c);
+            
+    
+            var circle_e24e0aa6eedc762ce1f31dfb117064e1 = L.circle(
+                [55.7383, 37.6083],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 58.72093023255814, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            circle_e24e0aa6eedc762ce1f31dfb117064e1.bindTooltip(
+                `<div>
+                     Зона популярности (850 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e15893dd49ed3c64a4f70c9033a69f48 = L.marker(
+                [55.7621, 37.6105],
+                {
+}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            var icon_0144fa70c419fe7c6c9c43414f5d0f2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "monument",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdaeefeb3f6ef30c84afcf190218cd76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ca29172fc84c4ac8a027d3994b8d03 = $(`<div id="html_d3ca29172fc84c4ac8a027d3994b8d03" style="width: 100.0%; height: 100.0%;"><b>Памятник Юрию Долгорукому</b><br>Категория: Памятник<br>Лайки: 💖 1100</div>`)[0];
+                popup_fdaeefeb3f6ef30c84afcf190218cd76.setContent(html_d3ca29172fc84c4ac8a027d3994b8d03);
+            
+        
+
+        marker_e15893dd49ed3c64a4f70c9033a69f48.bindPopup(popup_fdaeefeb3f6ef30c84afcf190218cd76)
+        ;
+
+        
+    
+    
+            marker_e15893dd49ed3c64a4f70c9033a69f48.bindTooltip(
+                `<div>
+                     Памятник Юрию Долгорукому
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e15893dd49ed3c64a4f70c9033a69f48.setIcon(icon_0144fa70c419fe7c6c9c43414f5d0f2b);
+            
+    
+            var circle_b7e4020e024230456e785987af504543 = L.circle(
+                [55.7621, 37.6105],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 73.25581395348837, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7d1a3a7321e394d2971872e823119637);
+        
+    
+            circle_b7e4020e024230456e785987af504543.bindTooltip(
+                `<div>
+                     Зона популярности (1100 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_7d1a3a7321e394d2971872e823119637.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_3e9cb3b63c7652acce937fa55a690749 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_4a50c1a6ef4df8f5216031e6f5d94129 = L.marker(
+                [55.7157, 37.5537],
+                {
+}
+            ).addTo(feature_group_3e9cb3b63c7652acce937fa55a690749);
+        
+    
+            var icon_9c0a8bb6b108e22e552e7e8862635334 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "futbol",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b047cc3bcb168f169f6edef2915e532c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11a611ad0cf573936f897ad3de4e4d9c = $(`<div id="html_11a611ad0cf573936f897ad3de4e4d9c" style="width: 100.0%; height: 100.0%;"><b>Стадион Лужники</b><br>Категория: Стадион<br>Лайки: 💖 4500</div>`)[0];
+                popup_b047cc3bcb168f169f6edef2915e532c.setContent(html_11a611ad0cf573936f897ad3de4e4d9c);
+            
+        
+
+        marker_4a50c1a6ef4df8f5216031e6f5d94129.bindPopup(popup_b047cc3bcb168f169f6edef2915e532c)
+        ;
+
+        
+    
+    
+            marker_4a50c1a6ef4df8f5216031e6f5d94129.bindTooltip(
+                `<div>
+                     Стадион Лужники
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a50c1a6ef4df8f5216031e6f5d94129.setIcon(icon_9c0a8bb6b108e22e552e7e8862635334);
+            
+    
+            var circle_11d6af80ac5b7338f939b36f1d01b81c = L.circle(
+                [55.7157, 37.5537],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 270.93023255813955, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e9cb3b63c7652acce937fa55a690749);
+        
+    
+            circle_11d6af80ac5b7338f939b36f1d01b81c.bindTooltip(
+                `<div>
+                     Зона популярности (4500 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9eeaab71d89b964002dc29d229b3ac0c = L.marker(
+                [55.7915, 37.5598],
+                {
+}
+            ).addTo(feature_group_3e9cb3b63c7652acce937fa55a690749);
+        
+    
+            var icon_9bdb9993bfbd4153bc265de601a6349d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "futbol",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25c10ef7dd4c983242eacfa5961193b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dd77bf56dd7c8976967fb76e855f277 = $(`<div id="html_1dd77bf56dd7c8976967fb76e855f277" style="width: 100.0%; height: 100.0%;"><b>Стадион Динамо</b><br>Категория: Стадион<br>Лайки: 💖 2000</div>`)[0];
+                popup_25c10ef7dd4c983242eacfa5961193b7.setContent(html_1dd77bf56dd7c8976967fb76e855f277);
+            
+        
+
+        marker_9eeaab71d89b964002dc29d229b3ac0c.bindPopup(popup_25c10ef7dd4c983242eacfa5961193b7)
+        ;
+
+        
+    
+    
+            marker_9eeaab71d89b964002dc29d229b3ac0c.bindTooltip(
+                `<div>
+                     Стадион Динамо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9eeaab71d89b964002dc29d229b3ac0c.setIcon(icon_9bdb9993bfbd4153bc265de601a6349d);
+            
+    
+            var circle_b44efb32fdbc9cac9018dcbed63db3a2 = L.circle(
+                [55.7915, 37.5598],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 125.5813953488372, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3e9cb3b63c7652acce937fa55a690749);
+        
+    
+            circle_b44efb32fdbc9cac9018dcbed63db3a2.bindTooltip(
+                `<div>
+                     Зона популярности (2000 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_3e9cb3b63c7652acce937fa55a690749.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_50cdb3594b7179a25662642940eeaf82 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_6788aa93521628666bcbc61fac99d422 = L.marker(
+                [55.7516, 37.6087],
+                {
+}
+            ).addTo(feature_group_50cdb3594b7179a25662642940eeaf82);
+        
+    
+            var icon_7c5f20508785d61215c3cdce11320b2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90cfdbfad82ab1a9ea33a04255a66a49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab795f4c05396f717576fe563f432eac = $(`<div id="html_ab795f4c05396f717576fe563f432eac" style="width: 100.0%; height: 100.0%;"><b>Ленинка (РГБ)</b><br>Категория: Библиотека<br>Лайки: 💖 1800</div>`)[0];
+                popup_90cfdbfad82ab1a9ea33a04255a66a49.setContent(html_ab795f4c05396f717576fe563f432eac);
+            
+        
+
+        marker_6788aa93521628666bcbc61fac99d422.bindPopup(popup_90cfdbfad82ab1a9ea33a04255a66a49)
+        ;
+
+        
+    
+    
+            marker_6788aa93521628666bcbc61fac99d422.bindTooltip(
+                `<div>
+                     Ленинка (РГБ)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6788aa93521628666bcbc61fac99d422.setIcon(icon_7c5f20508785d61215c3cdce11320b2d);
+            
+    
+            var circle_b884af9afe5383af141107e034ea0c81 = L.circle(
+                [55.7516, 37.6087],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 113.95348837209303, "stroke": true, "weight": 1}
+            ).addTo(feature_group_50cdb3594b7179a25662642940eeaf82);
+        
+    
+            circle_b884af9afe5383af141107e034ea0c81.bindTooltip(
+                `<div>
+                     Зона популярности (1800 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_82267423016440e5af03214ebe95d0a3 = L.marker(
+                [55.7476, 37.6496],
+                {
+}
+            ).addTo(feature_group_50cdb3594b7179a25662642940eeaf82);
+        
+    
+            var icon_3ab1cd4b9f8382475083a336fa6afec1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e5f24ddd026ee138c2780a1e749fe3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20cb17827975d53360c02436745f2269 = $(`<div id="html_20cb17827975d53360c02436745f2269" style="width: 100.0%; height: 100.0%;"><b>Библиотека Иностранной литературы</b><br>Категория: Библиотека<br>Лайки: 💖 700</div>`)[0];
+                popup_4e5f24ddd026ee138c2780a1e749fe3f.setContent(html_20cb17827975d53360c02436745f2269);
+            
+        
+
+        marker_82267423016440e5af03214ebe95d0a3.bindPopup(popup_4e5f24ddd026ee138c2780a1e749fe3f)
+        ;
+
+        
+    
+    
+            marker_82267423016440e5af03214ebe95d0a3.bindTooltip(
+                `<div>
+                     Библиотека Иностранной литературы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_82267423016440e5af03214ebe95d0a3.setIcon(icon_3ab1cd4b9f8382475083a336fa6afec1);
+            
+    
+            var circle_e69ddeb2fb1081b7470d4ce4556b51dd = L.circle(
+                [55.7476, 37.6496],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_50cdb3594b7179a25662642940eeaf82);
+        
+    
+            circle_e69ddeb2fb1081b7470d4ce4556b51dd.bindTooltip(
+                `<div>
+                     Зона популярности (700 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_50cdb3594b7179a25662642940eeaf82.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_2111cae66a1d82742f1ac54120ea8136 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b24b933928792ac14d758544334a4782 = L.marker(
+                [55.7093, 37.5422],
+                {
+}
+            ).addTo(feature_group_2111cae66a1d82742f1ac54120ea8136);
+        
+    
+            var icon_d1a0858d565797371b2b40b480f01177 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "eye",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5737afffab6416ad3624e87a366e633a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c9b891ce1c7422e063d93ea1417bfb3 = $(`<div id="html_3c9b891ce1c7422e063d93ea1417bfb3" style="width: 100.0%; height: 100.0%;"><b>Смотровая Воробьевы горы</b><br>Категория: Смотровая площадка<br>Лайки: 💖 3900</div>`)[0];
+                popup_5737afffab6416ad3624e87a366e633a.setContent(html_3c9b891ce1c7422e063d93ea1417bfb3);
+            
+        
+
+        marker_b24b933928792ac14d758544334a4782.bindPopup(popup_5737afffab6416ad3624e87a366e633a)
+        ;
+
+        
+    
+    
+            marker_b24b933928792ac14d758544334a4782.bindTooltip(
+                `<div>
+                     Смотровая Воробьевы горы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b24b933928792ac14d758544334a4782.setIcon(icon_d1a0858d565797371b2b40b480f01177);
+            
+    
+            var circle_5efabae7623c502f629e208462e1070c = L.circle(
+                [55.7093, 37.5422],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 236.04651162790697, "stroke": true, "weight": 1}
+            ).addTo(feature_group_2111cae66a1d82742f1ac54120ea8136);
+        
+    
+            circle_5efabae7623c502f629e208462e1070c.bindTooltip(
+                `<div>
+                     Зона популярности (3900 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89864aa140d293e2da81f32b07e13ed9 = L.marker(
+                [55.7486, 37.5385],
+                {
+}
+            ).addTo(feature_group_2111cae66a1d82742f1ac54120ea8136);
+        
+    
+            var icon_ba3b2dc8a492960971029e22b3813161 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "eye",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_419cd7fe29cd4f7480314bf5070a7c01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e065bc15acab9f984174e69094f0099 = $(`<div id="html_6e065bc15acab9f984174e69094f0099" style="width: 100.0%; height: 100.0%;"><b>Москва-Сити (Смотровая)</b><br>Категория: Смотровая площадка<br>Лайки: 💖 4600</div>`)[0];
+                popup_419cd7fe29cd4f7480314bf5070a7c01.setContent(html_6e065bc15acab9f984174e69094f0099);
+            
+        
+
+        marker_89864aa140d293e2da81f32b07e13ed9.bindPopup(popup_419cd7fe29cd4f7480314bf5070a7c01)
+        ;
+
+        
+    
+    
+            marker_89864aa140d293e2da81f32b07e13ed9.bindTooltip(
+                `<div>
+                     Москва-Сити (Смотровая)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89864aa140d293e2da81f32b07e13ed9.setIcon(icon_ba3b2dc8a492960971029e22b3813161);
+            
+    
+            var circle_3dad891b30ab786a91c2129288563122 = L.circle(
+                [55.7486, 37.5385],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 276.7441860465116, "stroke": true, "weight": 1}
+            ).addTo(feature_group_2111cae66a1d82742f1ac54120ea8136);
+        
+    
+            circle_3dad891b30ab786a91c2129288563122.bindTooltip(
+                `<div>
+                     Зона популярности (4600 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2111cae66a1d82742f1ac54120ea8136.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var feature_group_eebeeb4afdfe21d977126457c58b60a5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_2e742ade0cc0651b8cde99c9480ae992 = L.marker(
+                [55.7766, 37.656],
+                {
+}
+            ).addTo(feature_group_eebeeb4afdfe21d977126457c58b60a5);
+        
+    
+            var icon_c1398ef976d214f644f7bd8d557eeddc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "train-subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79ccdbbecb72935d4d1681ca97cbe5c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d81913db8ccbb905611b8dd078f4db6 = $(`<div id="html_7d81913db8ccbb905611b8dd078f4db6" style="width: 100.0%; height: 100.0%;"><b>Станция Комсомольская</b><br>Категория: Метро<br>Лайки: 💖 900</div>`)[0];
+                popup_79ccdbbecb72935d4d1681ca97cbe5c0.setContent(html_7d81913db8ccbb905611b8dd078f4db6);
+            
+        
+
+        marker_2e742ade0cc0651b8cde99c9480ae992.bindPopup(popup_79ccdbbecb72935d4d1681ca97cbe5c0)
+        ;
+
+        
+    
+    
+            marker_2e742ade0cc0651b8cde99c9480ae992.bindTooltip(
+                `<div>
+                     Станция Комсомольская
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e742ade0cc0651b8cde99c9480ae992.setIcon(icon_c1398ef976d214f644f7bd8d557eeddc);
+            
+    
+            var circle_f8b03ceb906b613297fb1b1beaed7e94 = L.circle(
+                [55.7766, 37.656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 61.627906976744185, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eebeeb4afdfe21d977126457c58b60a5);
+        
+    
+            circle_f8b03ceb906b613297fb1b1beaed7e94.bindTooltip(
+                `<div>
+                     Зона популярности (900 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6af785555db6b3a758845fdfd3b4e2d = L.marker(
+                [55.7698, 37.5959],
+                {
+}
+            ).addTo(feature_group_eebeeb4afdfe21d977126457c58b60a5);
+        
+    
+            var icon_dcfd26c4f96baa59688a1fe1329160f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "train-subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d50a5fac8fd05c80b381440dbba46e05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_889c144bbd3c3cb9e1a262c1f0034631 = $(`<div id="html_889c144bbd3c3cb9e1a262c1f0034631" style="width: 100.0%; height: 100.0%;"><b>Станция Маяковская</b><br>Категория: Метро<br>Лайки: 💖 1400</div>`)[0];
+                popup_d50a5fac8fd05c80b381440dbba46e05.setContent(html_889c144bbd3c3cb9e1a262c1f0034631);
+            
+        
+
+        marker_e6af785555db6b3a758845fdfd3b4e2d.bindPopup(popup_d50a5fac8fd05c80b381440dbba46e05)
+        ;
+
+        
+    
+    
+            marker_e6af785555db6b3a758845fdfd3b4e2d.bindTooltip(
+                `<div>
+                     Станция Маяковская
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6af785555db6b3a758845fdfd3b4e2d.setIcon(icon_dcfd26c4f96baa59688a1fe1329160f7);
+            
+    
+            var circle_96355bd6cd61110d46742dc25e25df46 = L.circle(
+                [55.7698, 37.5959],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 90.69767441860466, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eebeeb4afdfe21d977126457c58b60a5);
+        
+    
+            circle_96355bd6cd61110d46742dc25e25df46.bindTooltip(
+                `<div>
+                     Зона популярности (1400 лайков)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_eebeeb4afdfe21d977126457c58b60a5.addTo(map_d0febf7047d8aa4183f225459fa5e464);
+        
+    
+            var layer_control_ac853ef157f21e3da0f6230f31c99c69_layers = {
+                base_layers : {
+                    "\u0421\u0432\u0435\u0442\u043b\u0430\u044f \u043a\u0430\u0440\u0442\u0430" : tile_layer_2950f3281afe1c6bda20a4c770805ebd,
+                    "\u0422\u0435\u043c\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430" : tile_layer_dd2cd38fd01ea7d07107248430824876,
+                    "\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0430\u044f \u043a\u0430\u0440\u0442\u0430 (OSM)" : tile_layer_7bfadfc65fb5a9573895c3746a9c470f,
+                },
+                overlays :  {
+                    "\u003cspan style=\"color: red\"\u003e\u0414\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c\u003c/span\u003e" : feature_group_1b712b07fc1f480831ac50361127916c,
+                    "\u003cspan style=\"color: green\"\u003e\u041f\u0430\u0440\u043a\u003c/span\u003e" : feature_group_e76acd67a2c64bbc745e22d2f303b6f6,
+                    "\u003cspan style=\"color: purple\"\u003e\u0422\u0435\u0430\u0442\u0440\u003c/span\u003e" : feature_group_cd7c34d75df3f1217b983d11aa0d11bc,
+                    "\u003cspan style=\"color: blue\"\u003e\u041c\u0443\u0437\u0435\u0439\u003c/span\u003e" : feature_group_3b38ce54c1da25f7917690101e202669,
+                    "\u003cspan style=\"color: orange\"\u003e\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u003c/span\u003e" : feature_group_7e10561a0ce7c5843b9d47423fc6a523,
+                    "\u003cspan style=\"color: beige\"\u003e\u0425\u0440\u0430\u043c\u003c/span\u003e" : feature_group_c59c8a66a650c34ff902bcba7a414e90,
+                    "\u003cspan style=\"color: cadetblue\"\u003e\u0422\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0446\u0435\u043d\u0442\u0440\u003c/span\u003e" : feature_group_961e14a8f6e7588ea768c2ae8bceb658,
+                    "\u003cspan style=\"color: gray\"\u003e\u041f\u0430\u043c\u044f\u0442\u043d\u0438\u043a\u003c/span\u003e" : feature_group_7d1a3a7321e394d2971872e823119637,
+                    "\u003cspan style=\"color: lightgreen\"\u003e\u0421\u0442\u0430\u0434\u0438\u043e\u043d\u003c/span\u003e" : feature_group_3e9cb3b63c7652acce937fa55a690749,
+                    "\u003cspan style=\"color: darkblue\"\u003e\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430\u003c/span\u003e" : feature_group_50cdb3594b7179a25662642940eeaf82,
+                    "\u003cspan style=\"color: lightblue\"\u003e\u0421\u043c\u043e\u0442\u0440\u043e\u0432\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430\u003c/span\u003e" : feature_group_2111cae66a1d82742f1ac54120ea8136,
+                    "\u003cspan style=\"color: darkred\"\u003e\u041c\u0435\u0442\u0440\u043e\u003c/span\u003e" : feature_group_eebeeb4afdfe21d977126457c58b60a5,
+                },
+            };
+            let layer_control_ac853ef157f21e3da0f6230f31c99c69 = L.control.layers(
+                layer_control_ac853ef157f21e3da0f6230f31c99c69_layers.base_layers,
+                layer_control_ac853ef157f21e3da0f6230f31c99c69_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_d0febf7047d8aa4183f225459fa5e464);
+
+        
+</script>
+</html>
